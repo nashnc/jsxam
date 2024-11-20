@@ -32,7 +32,7 @@
 
     <title>Calculator</title>
   </head>
-  <body>
+  <body class="overflow-hidden">
     <div class="container-sm pt-5">
       <div class="row-sm">
         <div class="col-sm">
@@ -42,6 +42,7 @@
               id="firstNumber"
               name="firstNumber"
               placeholder="Enter the first number:"
+              class="form-control"
             /><br />
           </div>
 
@@ -51,7 +52,7 @@
             aria-labelledby="dropdownMenuButton"
           >
             <label for="operation">Select operation:</label><br />
-            <select id="operation" name="operation">
+            <select id="operation" name="operation" class="form-control">
               <!-- ========== Start dropdown ========== -->
 
               <!-- ========== End dropdown ========== -->
@@ -69,16 +70,18 @@
               id="secondNumber"
               name="secondNumber"
               placeholder="Enter the second number:"
+              class="form-control"
             /><br />
           </div>
 
           <button
-            id="equalsButton "
-            class="btn btn-success btn-blcok"
+            id="equalsButton"
+            class="btn btn-success btn-block"
             onclick="calculateResult()"
           >
-            =</button
-          ><!-- ========== Start calls thefunction ========== -->
+            =
+          </button>
+          <!-- ========== Start calls thefunction ========== -->
 
           <!-- ========== End calls thefunction ========== -->
 

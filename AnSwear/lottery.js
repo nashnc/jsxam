@@ -13,9 +13,13 @@ const drawWinner = () => {
 
   let draw = Math.floor(Math.random() * totalTickets);
   let winner = tickets[draw];
+
+  theAnnouncement(winner);
+};
+
+const theAnnouncement = (winner) => {
   console.log(winner);
   document.getElementById("result").innerHTML = winner;
   document.getElementById("modalWinner").innerHTML = winner;
   document.getElementById("result").style.color = "#ff0000";
-  console.log("Function called");
 };
